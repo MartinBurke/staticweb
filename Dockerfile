@@ -9,4 +9,4 @@ RUN echo 'Hi, I am in your container' \
 ENTRYPOINT [ "nginx"]
 CMD [ "-g", "daemon off;" ]
 
-EXPOSE 8080
+EXPOSE 80
