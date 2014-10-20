@@ -6,6 +6,7 @@ RUN apt-get install -y nginx
 RUN echo 'Hi, I am in your container' \
     >/usr/share/nginx/html/index.html
 
-CMD [ "nginx", "-g", "daemon off;" ]
+ENTRYPOINT [ "nginx"]
+CMD [ "-g", "daemon off;" ]
 
-EXPOSE 80
+EXPOSE 8080
